@@ -18,4 +18,4 @@ class User(SqlAlchemyBase):
     hashed_password = sqlalchemy.Column(sqlalchemy.String)
     modified_date = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.now)
 
-    jobs_ = sqlalchemy.orm.relationship("Jobs", back_populates='team_leader')
+    jobs_ = sqlalchemy.orm.relationship("Jobs", back_populates='leader')
