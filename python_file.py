@@ -21,6 +21,7 @@ def add_user(surname, name, age, position, speciality, address, email):
     user.speciality = speciality
     user.address = address
     user.email = email
+    db_sess.commit()
 
 
 add_user("Scott", "Ridley", 21, "captain", "research engineer", "module_1", "scott_chief@mars.org")
